@@ -6,7 +6,9 @@ import Header from './components/Header';
 
 const App: React.FC = () => {
   return <SafeAreaView style={style.App} >
-    <Header />
+    <Header name ="Jhonny" title="welcome to RN!" />
+    <Header name ="Rafael" title="Olá," />
+
   </SafeAreaView>
 };
 
