@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
-import {Props} from'./types'
+import {Props} from './types'
 
 const Header = (props: Props) => {
   return (
@@ -21,6 +21,6 @@ const style = StyleSheet.create({
   },
   SubTitle: {
     color: 'black', //cor do titulo
-    fontSize: 15, //tamanho do titulo
+    fontSize: 20, //tamanho do titulo
   },
 });
