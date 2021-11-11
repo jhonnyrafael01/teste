@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Alert, Button, SafeAreaView, StyleSheet } from 'react-native';
+import React, { useState, useEffect, useCallback} from 'react';
+import { Button, SafeAreaView, StyleSheet } from 'react-native';
 import Header from './components/Header';
 
 // import { Container } from './styles';
@@ -12,33 +12,31 @@ const App: React.FC = () => {
  * Effect
  */
   useEffect(()=>{
-    console.log("mounting");
     if(name == 'Jhonny'){
       setTitle('Hello');
     }else{
       setTitle('Olá');
     }
     
-    return () => Alert.alert('OOPS', 'Component unmounted!')
   }, [name, title]);
+
+
   /**
    * callback
    */
-  const handlePressButton = () => {
-    setName(old => {
-      if (old == 'Jhonny') {
-        return 'Espartano';
-      } else {
-        return 'Jhonny';
-      }
-    });
-  };
-
-
+  const handlePressButton = useCallback (()=>{
+    if (name == 'Jhonny') {
+      console.log(`handlePress: ${name}`);
+      setName('Espartano');
+    }else{
+      setName ('Jhonny');
+    }
+  },[name]);
+  
   return (
     <SafeAreaView style={style.App} >
       <Header title={title} name={name} />
-      <Button title="change name" onPress={handlePressButton} />
+      <Button title="change name" onPress={handlePressButton}/>
     </SafeAreaView>
   );
 };
