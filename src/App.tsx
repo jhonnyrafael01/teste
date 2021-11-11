@@ -26,7 +26,6 @@ const App: React.FC = () => {
    */
   const handlePressButton = useCallback (()=>{
     if (name == 'Jhonny') {
-      console.log(`handlePress: ${name}`);
       setName('Espartano');
     }else{
       setName ('Jhonny');
