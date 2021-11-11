@@ -13,7 +13,7 @@ const App: React.FC = () => {
  */
   useEffect(()=>{
     if(name == 'Jhonny'){
-      setTitle('Hello');
+      setTitle('Bem Vindo!');
     }else{
       setTitle('Olá');
     }

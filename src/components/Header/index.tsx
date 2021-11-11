@@ -17,10 +17,10 @@ export default Header;
 const style = StyleSheet.create({
   Title: {
     color: 'black', //cor do titulo
-    fontSize: 30, //tamanho do titulo
+    fontSize: 20, //tamanho do titulo
   },
   SubTitle: {
     color: 'black', //cor do titulo
-    fontSize: 20, //tamanho do titulo
+    fontSize: 30, //tamanho do titulo
   },
 });
