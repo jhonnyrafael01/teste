@@ -5,7 +5,7 @@ import {ThemeContext} from 'styled-components';
 const Button: React.FC<{onPress: () => void}> = ({onPress}) => {
     const themeContext = useContext(ThemeContext);
     return( <ButtonRN 
-        color={themeContext.colors.secondary}
+        color={themeContext.colors.primary.main}
         title='charge thema' 
         onPress={onPress} 
         />

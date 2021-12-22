@@ -23,7 +23,7 @@ const useApearance = (): Props => {
         return themeDark;
     }, [currentTheme]);
 
-    useEffect(()=>{
+    useEffect(() => {
         Appearance.addChangeListener(handleChangeAppearance);
 
         return () => Appearance.addChangeListener(handleChangeAppearance);
