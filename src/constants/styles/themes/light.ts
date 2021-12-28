@@ -1,5 +1,6 @@
 import { DefaultTheme } from "styled-components";
 import * as Colors from '../colors';
+import { typographyCommon } from "./common";
 
 export const themelight: DefaultTheme = {
     colors: {
@@ -24,4 +25,5 @@ export const themelight: DefaultTheme = {
         onMain: Colors.white,
       },
     },
+    typography:typographyCommon,
   };
