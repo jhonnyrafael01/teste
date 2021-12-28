@@ -24,6 +24,9 @@ const App: React.FC = () => {
          <Icon icon='morte' size={150} />
          <Icon icon='fantasma' size={150} />
         </View>
+        <Button color='surface' mode='outlined' loading>
+          Change icons
+        </Button>
       </Container>
     </ThemeProvider>
   );

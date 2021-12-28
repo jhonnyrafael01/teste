@@ -21,7 +21,7 @@ export const themelight: DefaultTheme = {
         onMain: Colors.black,
       },
       surface: {
-        main: Colors.nestrais,
+        main: Colors.black,
         onMain: Colors.white,
       },
     },
